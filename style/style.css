@@ -1,0 +1,132 @@
+/* OPMAAK LAYOUT PAGINA */
+html{
+	background-color: #CCAADD;
+	min-width: 300px;
+	font-family: arial;
+	color: #fff;
+}
+
+#header{
+	height : 80px;
+	display: flex;
+}
+
+#header img {
+		max-height: 100%;
+}
+
+#grid-container {
+	display: grid;
+	grid-template-columns: auto;
+  	grid-template-rows: repeat(5, 150px);
+	grid-gap: 10px;
+}
+
+#grid-container > div {
+		background-color: #CCEEEE;
+}
+
+#item1{
+		grid-column: span 3;
+		overflow: auto;
+		min-height: 400px;
+}
+
+#item2{
+		grid-column: span 3;
+		overflow: auto;
+		min-height: 400px;
+		margin-top: 300px;
+		padding-top: 10px;
+}
+
+#weer {
+	background-color: #FFAACC;
+	overflow: auto;
+	margin: auto;
+}
+
+#weer > .forecastMoment {
+	float: left;
+	width: 96px;
+	margin: 2px;
+	margin-left: 12px;
+	text-align: center;
+	background-color: #CCBBFF;
+	border-radius: 6px;
+	color: #444;
+	font-size: 0.8em;
+}
+.hidden {
+	display: none;
+}
+    #map{
+		color: black;
+      height:400px;
+      width:100%;
+    }
+
+@media screen and (min-width: 640px){
+ 	#header{
+		padding-left: 10px;
+	}
+	
+ 	#item1{
+		min-height: 600px;
+ 	}
+ 
+	#item2{
+ 		min-height: 400px;
+		padding-top: 20px;
+
+ 	}
+}
+
+
+@media screen and (min-width: 1024px){
+	#grid-container {
+		display: grid;
+  		grid-template-columns: repeat(4,2fr);
+		grid-gap: 10px;
+	}
+	#grid-container > div {
+		background-color: #CCEEEE;
+	}
+	
+	#item1{
+		grid-column: span 2;
+	}
+	#item2{
+		grid-column: span 2;
+		overflow: visible;
+		margin-top: 0px;
+		padding-top: 0px;
+	}
+
+	#weer {
+		background-color: #CCBBFF;
+		overflow: visible;
+		margin: 1px;
+		overflow: overflow;
+	}
+    #map{
+		color: black;
+      	height:520px;
+      	width:100%;
+    }
+}
+@media screen and (min-width: 1640px){
+  	#grid-container{
+  		max-width: 1640px; 
+  	}
+	#item1{
+		grid-column: span 2;
+		margin-top: 20px;
+
+	}
+	#item2{
+		grid-column: span 2;
+		margin-top: 20px;
+	}
+	
+}

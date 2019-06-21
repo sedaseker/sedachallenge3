@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="nl">
+	<head>
+		<title>Landing plaats SPACEX</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="style/style.css">
+	</head>
+	<body>
+		<div id=header>
+			<img src="images/logo.png" alt="spacexlogo">
+		</div>
+		<div  id="grid-container">
+			<div id="item1" class="item">
+				<h1>Weersverwachtingen:</h1>
+				<p> Per dag weergeven.</p>
+				<article id="weer"></article>
+				<script  src="text/script.js"></script>
+			</div>
+		<div id="item2" class="item">
+			<h1>New York</h1>
+			<p>Dit zijn de meest bezochte plekken in New York</p>
+			  <div id="map"></div>
+			  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDL08479IoqwRRKPAnWBztvtZ7v6GUHn1o&callback=initMap"></script>
+		</div>
+	</body>
+</html>
